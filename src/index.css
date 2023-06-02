@@ -1,3 +1,6 @@
+html{
+  background-color: #121212;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +13,141 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#movieList{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.movieCard{
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  color: white;
+  margin: 1rem;
+  margin-bottom: 5rem;
+  transition: box-shadow 0.5s ease-in;
+}
+
+.movieCard:hover{
+  border : 2px solid black;
+  /*background-color: white;
+  color: black; */
+  box-shadow: 0px 0px 5px 5px #888888;
+}
+
+.imageContainer{
+  height : 400px;
+  width: 300px;
+}
+
+.movie-image{
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.details{
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1rem;
+  font-weight: bolder;
+}
+
+.star{
+  height : 0.9rem;
+  width: 0.9rem;
+}
+
+.content{
+  padding : 0.5rem;
+}
+.btn{
+  display: inline-block;
+  margin: 0.5rem;
+  background-color: #f5c518;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  border: none;
+  color: black;
+}
+
+.btn:hover{
+  background-color: royalblue;
+  color : white;
+}
+
+.movieSummary{
+
+  margin : 3rem;
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.genre{
+  display: inline-block;
+  padding : 0.25rem;
+  margin : 0.5rem;
+  border: 1px solid white;
+}
+
+.genre-rating{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-container input{
+  font-size: 0.9rem;
+  line-height: 1.8rem;
+  margin : 0.25rem;
+  margin-bottom: 0.5rem;
+  width : 400px;
+  padding : 0.25rem;
+}
+
+.blur-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+}
+
+.btnConatiner{
+  display: flex;
+  flex-direction: row;
+  width : 100%;
+  justify-content: space-between;
+}
+
+.btnConatiner button{
+  font-size: 1rem;
+  padding: 0.25rem;
+  line-height: 1.5rem;
+  width : 30%;
+  background-color: transparent;
+  border : 1px solid black;
+  margin : 1rem;
 }
