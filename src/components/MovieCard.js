@@ -10,7 +10,7 @@ function MovieCard({movie}){
         <div>
             <div className = "imageContainer">
                 <img 
-                    src = {movie.show.image.original}
+                    src = {movie.show.image !== null ? movie.show.image.original : ""}
                     alt = {movie.show.name} 
                     className = "movie-image"
                 />
