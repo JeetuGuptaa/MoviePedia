@@ -17,7 +17,7 @@ function MovieSummary(props){
         <>
             <div className = "movieSummary">
                 <div>
-                    <img src = {movie.image.original} alt = {movie.id} className='imageContainer'></img>
+                    <img src = {movie.show.image !== null ? movie.show.image.original : ""} alt = {movie.id} className='imageContainer'></img>
                 </div>
                 <div style = {{'margin' : '1rem'}}>
                     <div className = "genre-rating">
